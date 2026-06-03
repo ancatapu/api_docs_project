@@ -48,23 +48,5 @@
             </codeblock>
         </section>
         
-        <section id="get-order-details">
-            <title>Get Order Details</title>
-            <p><b>Method:</b> GET URL: /orders/{id}</p>
-            <p>Returns details for a specific order.</p>
-            <p>Parameter: id (integer) — Unique order identifier.</p>
-            <p>Response status code: 200</p>
-            <p><b>Example:</b></p>
-            <codeblock>
-                {
-                "id": 101,
-                "customer": "John Smith",
-                "product": "Laptop",
-                "quantity": 1,
-                "status": "Processing"
-                }
-            </codeblock>
-        </section>
-        
     </body>
 </topic>
