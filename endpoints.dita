@@ -1,64 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="endpoints">
     <title>Endpoints</title>
     <shortdesc>API endpoints for order management.</shortdesc>
     <body>
-        <p>Get All Orders</p>
-        <p>Method: GET</p>
-        <p>URL: /orders</p>
-        <p>Returns a list of all orders.</p>
-        <p>Response status code: 200</p>
-        <p>Example:</p>
-        <codeblock>
-            [
-            {
-            "id": 101,
-            "customer": "John Smith",
-            "status": "Processing"
-            }
-            ]
-        </codeblock>
         
-        <p>Create Order</p>
-        <p>Method: POST</p>
-        <p>URL: /orders</p>
-        <p>Creates a new order.</p>
-        <p>Request body:</p>
-        <p>customer (string, required)</p>
-        <p>product (string, required)</p>
-        <p>quantity (integer, required)</p>
-        <p>Request example:</p>
-        <codeblock>
-            {
-            "customer": "John Smith",
-            "product": "Laptop",
-            "quantity": 1
-            }
-        </codeblock>
-        <p>Response status code: 201</p>
-        <p>Example:</p>
-        <codeblock>
-            {
-            "id": 102,
-            "status": "Created"
-            }
-        </codeblock>
+        <section id="get-all-orders">
+            <title>Get All Orders</title>
+            <p><b>Method:</b> GET URL: /orders</p>
+            <p>Returns a list of all orders.</p>
+            <p>Response status code: 200</p>
+            <p><b>Example:</b></p>
+            <codeblock>
+                [
+                {
+                "id": 101,
+                "customer": "John Smith",
+                "status": "Processing"
+                }
+                ]
+            </codeblock>
+        </section>
         
-        <p>Get Order Details</p>
-        <p>Method: GET</p>
-        <p>URL: /orders/{id}</p>
-        <p>Returns details for a specific order.</p>
-        <p>Parameter: id (integer) — Unique order identifier.</p>
-        <p>Response status code: 200</p>
-        <p>Example:</p>
-        <codeblock>
-            {
-            "id": 101,
-            "customer": "John Smith",
-            "product": "Laptop",
-            "quantity": 1,
-            "status": "Processing"
-            }
-        </codeblock>
+        <section id="create-order">
+            <title>Create Order</title>
+            <p><b>Method:</b> POST URL: /orders</p>
+            <p>Creates a new order.</p>
+            <p><b>Request body:</b></p>
+            <p>customer (string, required)</p>
+            <p>product (string, required)</p>
+            <p>quantity (integer, required)</p>
+            <p><b>Request example:</b></p>
+            <codeblock>
+                {
+                "customer": "John Smith",
+                "product": "Laptop",
+                "quantity": 1
+                }
+            </codeblock>
+            <p>Response status code: 201</p>
+            <p><b>Example:</b></p>
+            <codeblock>
+                {
+                "id": 102,
+                "status": "Created"
+                }
+            </codeblock>
+        </section>
+        
+        <section id="get-order-details">
+            <title>Get Order Details</title>
+            <p><b>Method:</b> GET URL: /orders/{id}</p>
+            <p>Returns details for a specific order.</p>
+            <p>Parameter: id (integer) — Unique order identifier.</p>
+            <p>Response status code: 200</p>
+            <p><b>Example:</b></p>
+            <codeblock>
+                {
+                "id": 101,
+                "customer": "John Smith",
+                "product": "Laptop",
+                "quantity": 1,
+                "status": "Processing"
+                }
+            </codeblock>
+        </section>
+        
     </body>
 </topic>
