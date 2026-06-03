@@ -12,3 +12,4 @@ Current
 
 #### Author
 Anca Tapu
+Chloé Lauwers
