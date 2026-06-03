@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="errors">
+    <title>Errors</title>
+    <shortdesc>API error reference.</shortdesc>
+    <body>
+        <section id="error-400">
+            <title>400 Bad Request</title>
+            <p>Code: 400</p>
+            <p>Name: Bad Request</p>
+            <p>Description: The request contains invalid or missing data.</p>
+            <p>Solution: Verify all required fields before sending the request.</p>
+        </section>
+        
+        <section id="error-401">
+            <title>401 Unauthorized</title>
+            <p>Code: 401</p>
+            <p>Name: Unauthorized</p>
+            <p>Description: Authentication failed.</p>
+            <p>Solution: Check that the API key is valid and correctly configured.</p>
+        </section>
+        
+        <section id="error-404">
+            <title>404 Not Found</title>
+            <p>Code: 404</p>
+            <p>Name: Not Found</p>
+            <p>Description: The requested resource does not exist.</p>
+            <p>Solution: Verify the endpoint URL and resource identifier.</p>
+        </section>
+        
+        <section id="error-500">
+            <title>500 Internal Server Error</title>
+            <p>Code: 500</p>
+            <p>Name: Internal Server Error</p>
+            <p>Description: An unexpected server error occurred.</p>
+        </section>
+    </body>
+</topic>
